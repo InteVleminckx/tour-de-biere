@@ -1,0 +1,27 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+
+# Editor configs
+.vscode/
+
+# Environment files / secrets
+.env
+*.env
+
+.idea
+
+# Flask / SocketIO specific
+instance/
+*.db
+*.sqlite3
+
+# macOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
