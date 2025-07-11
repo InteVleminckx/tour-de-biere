@@ -10,7 +10,7 @@ qr_bp = Blueprint('qr', __name__)
 def qr_code():
     ip_address = get_local_ip()
     port = 5000
-    ref = "clients"
+    ref = "login"
     url = f"http://{ip_address}:{port}/{ref}"
 
     qr_img = qrcode.make(url)

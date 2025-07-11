@@ -2,7 +2,7 @@ from flask import Flask
 from flask_socketio import SocketIO
 from config import Config
 
-socketio = SocketIO()
+socketio = SocketIO(manage_session=True)
 
 def create_app(config_class=Config):
     flask_app = Flask(__name__)

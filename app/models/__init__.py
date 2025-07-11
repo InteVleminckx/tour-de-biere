@@ -5,6 +5,8 @@ from . import tables  # Import all models so Base.metadata knows them
 Base.metadata.create_all(engine)
 
 # Optionally expose models for easy import
-# from .tables import User  # Add other models as needed
+from .tables import Users, GeneralClassification, PointsClassification, PolkaClassification, Objective, EventLog, Etappe, \
+    PointsCategoryPoints, PolkaCategoryPoints, Objectives  # Add other models as needed
 
-__all__ = ["Session", "Base", "engine"] #, "User"]
+__all__ = ["Session", "Base", "engine", "Users", "GeneralClassification", "PointsClassification", "PolkaClassification",
+           "Objective", "EventLog", "Etappe", "PointsCategoryPoints", "PolkaCategoryPoints", "Objectives"]
